@@ -1,0 +1,238 @@
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif, Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding-top: 70px;
+}
+
+.btnAdd {
+    width: 100%;
+}
+
+/*index.html*/
+
+.formSublimt {
+    /*width: 500px;*/
+}
+
+.clearx {
+    /*margin-top: 15px;*/
+    clear: both;
+}
+
+.fenlei {
+    margin-bottom: 10px;
+}
+
+/*index.html  End*/
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0px 1px 6px #ccc;
+    -moz-box-shadow: 0px 1px 6px #ccc;
+    -ms-box-shadow: 0px 1px 6px #ccc;
+    -o-box-shadow: 0px 1px 6px #ccc;
+    box-shadow: 0px 1px 6px #ccc;
+}
+
+.navbar-default .navbar-text {
+    margin-left: -12px;
+}
+
+/*footer.html*/
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+
+/*footer.html End*/
+
+/*center start*/
+.center {
+    margin: auto;
+    width: 999px;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+
+.geekLeft {
+    /*border: 1px solid red;*/
+    height: 200px;
+    width: 20%;
+    float: left;
+    margin-left: 10px;
+}
+
+.geekCenter {
+    /*border: 1px solid red;*/
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+.font_a {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.font_b {
+    font-weight: bold;
+}
+
+.font_c {
+    font-weight: bold;
+    color: #3176B1;
+}
+
+.list-group {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0px 1px 6px #ccc;
+    -moz-box-shadow: 0px 1px 6px #ccc;
+    -ms-box-shadow: 0px 1px 6px #ccc;
+    -o-box-shadow: 0px 1px 6px #ccc;
+    box-shadow: 0px 1px 6px #ccc;
+    margin-top: -10px;
+}
+
+.geekRight {
+    border: 1px solid red;
+    height: 200px;
+    width: 19%;
+    float: left;
+    margin-left: 10px;
+}
+
+.c_btnAdd {
+    float: right;
+}
+
+.c_list {
+    border: 1px solid #ccc;
+    width: 189px;
+    height: 60px;
+    line-height: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0px 1px 6px #ccc;
+    -moz-box-shadow: 0px 1px 6px #ccc;
+    -ms-box-shadow: 0px 1px 6px #ccc;
+    -o-box-shadow: 0px 1px 6px #ccc;
+    box-shadow: 0px 1px 6px #ccc;
+}
+
+.imgAv {
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    margin-right: 8px;
+    padding: 1px;
+    border: 1px solid #E7E7E7;
+    width: 50px;
+    height: 50px; /*设置图像的长和宽*/
+    border-radius: 30px; /*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/
+    /*-webkit-border-radius: 20px;/*圆角效果：兼容webkit浏览器*/
+    -moz-border-radius: 20px;
+    box-shadow: inset 0 -1px 0 #3333sf; /*设置图像阴影效果*/
+    -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out; /*变化时间设置为0.4秒(变化动作即为下面的图像旋转360度）*/
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+
+.imgAv:hover {
+    /*设置鼠标悬浮在头像时的CSS样式*/
+    box-shadow: 0 0 10px #fff;
+rgba(255, 255, 255, .6), inset 0 0 20 px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 0 10px #fff;
+rgba(255, 255, 255, .6), inset 0 0 20 px rgba(255, 255, 255, 1);
+    transform: rotateZ(360deg); /*图像旋转360度*/
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .center {
+        width: 999px;
+    }
+}
+
+/* css注释：设置了浏览器宽度不小于1201px时 abc 显示1200px宽度 */
+
+@media screen and (max-width: 1024px) {
+    .center {
+        width: 999px;
+    }
+}
+
+/* 设置了浏览器宽度不大于1200px时 abc 显示900px宽度 */
+
+@media screen and (max-width: 901px) {
+    .center {
+        width: 100%;
+    }
+
+    .geekCenter {
+        width: 95%;
+    }
+
+    .c_list {
+        margin-left: 18px;
+        margin-bottom: 5px;
+    }
+
+}
+
+/* 设置了浏览器宽度不大于901px时 abc 显示200px宽度 */
+
+@media screen and (max-width: 500px) {
+    .center {
+        width: 100%;
+    }
+
+    .geekCenter {
+        width: 95%;
+    }
+
+    .c_list {
+        margin-left: 12px;
+        margin-bottom: 5px;
+        width: 160px;
+    }
+
+
+}
+
+.c_hr {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.c_desc {
+    margin-top: -20px;
+}
+
+.s_title {
+    width: 75%;
+    float: left;
+}
+
+.s_select {
+    width: 25%;
+}
+
+.link_title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.link_x{
+    margin-right: 10px;
+}

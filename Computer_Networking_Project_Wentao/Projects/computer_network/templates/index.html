@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>Wentao Final</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style type="text/css">
+    .btnLED {
+        text-align: center;
+        padding: 40px;
+    }
+    .btn-primary {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .divtitle {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="divtitle">
+            <span>Final Project Web</span>
+        </div>
+        <div class="btnLED">
+            <button type="button" class="btn btn-primary" onclick="startLed()">Turn On</button>
+            <button type="button" class="btn btn-primary" onclick="endLed()">Turn Off</button>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function startLed() {
+        $.ajax({
+            type: "POST",
+            url: "/startLED.html",
+            dataType: "text",
+            success: function(data) {
+                console.log(data);
+            }
+        });
+    }
+    function endLed() {
+        $.ajax({
+            type: "POST",
+            url: "/endLED.html",
+            dataType: "text",
+            success: function(data) {
+                console.log(data);
+            }
+        });
+    }
+    </script>
+</body>
+</html>
